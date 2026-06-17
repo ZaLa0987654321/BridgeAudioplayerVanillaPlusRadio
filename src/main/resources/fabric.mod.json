@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "audiobridge",
+  "version": "${version}",
+  "name": "AudioPlayer - Vanilla+ Radio Bridge",
+  "description": "A server-side addon that bridges AudioPlayer and Vanilla+ Radio, allowing you to broadcast custom music from a Jukebox.",
+  "authors": ["ZaLa"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/audiobridge/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.zala.audiobridge.Audiobridge"
+    ]
+  },
+  "mixins": [
+    "audiobridge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "java": ">=21",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "voicechat_api": ">=2.6.0",
+    "audioplayer": ">=2.2.0",
+    "vpl": ">=2.2"
+  }
+}
